@@ -11,8 +11,10 @@
 |
 */
 
+Route::auth();
+
 Route::get('/', function () {
-    return view('home');
+    return view('welcome');
 });
 
 Route::get('/home', function () {
